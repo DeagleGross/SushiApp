@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SushiApp.Views.MenuPages.FinalDeliveryPage"
+             Title="Оформление доставки">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" Spacing="4" VerticalOptions="FillAndExpand" Padding="15,20,15,20" HorizontalOptions="CenterAndExpand">
+                <Label TextColor="White" Text="Мобильный телефон для связи *" HorizontalOptions="Center"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Entry x:Name="PhoneQ" WidthRequest="50" MinimumWidthRequest="50" HorizontalOptions="Center" Placeholder="+7"/>    
+                    <Entry x:Name="PhoneW" WidthRequest="50" MinimumWidthRequest="50" HorizontalOptions="Center" Placeholder="000"/>
+                    <Entry x:Name="PhoneE" WidthRequest="50" MinimumWidthRequest="50" HorizontalOptions="Center" Placeholder="111"/>
+                    <Entry x:Name="PhoneR" WidthRequest="50" MinimumWidthRequest="50" HorizontalOptions="Center" Placeholder="22"/>
+                    <Entry x:Name="PhoneT" WidthRequest="50" MinimumWidthRequest="50" HorizontalOptions="Center" Placeholder="33"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" Spacing="5" Padding="15, 20, 15, 20" VerticalOptions="FillAndExpand">
+                    <Label TextColor="White" FontAttributes="Bold" Font="25" Text="Адрес доставки" HorizontalOptions="Center"/>
+                    
+                    <Label TextColor="White" Text="Улица *"/>
+                    <Entry x:Name="Street" Placeholder="улица..."/>
+
+                    <Label TextColor="White" Text="Дом *"/>
+                    <Entry x:Name="House" Placeholder="Дом..."/>
+
+                    <Label TextColor="White" Text="Подъезд *"/>
+                    <Entry x:Name="Entrance" Placeholder="Подъезд..."/>
+
+                    <Label TextColor="White" Text="Квартира *"/>
+                    <Entry x:Name="Apartment" Placeholder="Квартира..."/>    
+
+                    <Label TextColor="White" Text="Комментарий к доставке"/>
+                    <Editor x:Name="Commentary"/>
+
+                    <Label Text="* - обязательны к заполнению" TextColor="White" Font="12"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="5">
+                    <Label TextColor="White" FontAttributes="Italic" Text="Сохранить эти настройки для будущих заказов" />
+                    <Switch x:Name="SwitchToggler" IsToggled="false"/>    
+                </StackLayout>
+                
+                <StackLayout Orientation="Vertical" Spacing="8" VerticalOptions="Center">
+                    <Label x:Name="PriceState" HorizontalOptions="Center" 
+                       TextColor="White" Font="17" FontAttributes="Italic"/>
+
+                    <Button Text="Отправить заказ" Clicked="SendOrder" 
+                        TextColor="Black" Font="20" BorderWidth="3" BackgroundColor="White"
+                        BorderRadius="3"/>
+                </StackLayout>
+            </StackLayout>    
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>

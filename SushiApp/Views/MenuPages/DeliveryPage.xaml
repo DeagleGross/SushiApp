@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SushiApp.Views.MenuPages.DeliveryPage"
+             Title="Условия доставки">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Orientation="Vertical" Spacing="6" Padding="30,5,15,15">
+            <StackLayout x:Name="BasicInfo" Orientation="Vertical" Spacing="6" Padding="0,20,0,0">
+                <Label TextColor="White"
+                       Text="Район доставки отмечен на карте." FontAttributes="Bold"/>
+                <Label TextColor="White"
+                       Text="Синяя зона - доставка бесплатная, минимальная сумма заказа 950р."/>
+                <Label TextColor="White"
+                       Text="Зелёная зона - доставка 200р, минимальная сумма заказа 1000р."  />
+                <Label TextColor="White"
+                       Text="Красная зона - доставка 300р, минимальная сумма заказа 1000р."  />
+            </StackLayout>
+            <StackLayout x:Name="Deliverytime" Orientation="Vertical" Spacing="6" Padding="0,20,0,0">
+                <Image Source="DeliveryWorktime.png" HorizontalOptions="Center" HeightRequest="50"/>
+                <Label TextColor="White"
+                       Text="Вторник - воскресенье: с 11:00 до 21:00."/>
+                <Label TextColor="White" VerticalOptions="Center" 
+                       Text="(Заказы принимаются до 20:40).Понедельник: выходной."/>
+            </StackLayout>    
+            <StackLayout x:Name="DeliveryFast" Orientation="Vertical" Spacing="6" Padding="0,20,0,0">
+                <Image Source="DeliveryFast.png" HorizontalOptions="Center" HeightRequest="50"/>
+                <Label TextColor="White"
+                       Text="Мы не хотим, чтобы голод портил вам настроение, поэтому стараемся доставлять ваши заказы максимально быстро :)"/>
+                <Label TextColor="White" VerticalOptions="Center" 
+                       Text="Среднее время доставки составляет 60 минут."/>
+            </StackLayout>        
+            <StackLayout Padding="0,15,5,20">
+                    <Image Source="MainMap.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                    <Label TextColor="White" HorizontalOptions="Center"
+                       Text="Возможность доставки в Вашу зону узнавайте у сотрудников по телефону."/> 
+                    <Label TextColor="White" HorizontalOptions="Center"
+                       Text="8-499-667-50-02."/> 
+            </StackLayout>    
+        </StackLayout>
+        </ScrollView>        
+    </ContentPage.Content>
+</ContentPage>

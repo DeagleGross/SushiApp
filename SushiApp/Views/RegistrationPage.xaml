@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="SushiApp.Views.RegistrationPage"
+             Title="Регистрация">
+    
+    <ScrollView>
+        <StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Image x:Name="LoginIcon" Source="LoginIconSushi.png" Margin="0,80,0,0"/>
+            </StackLayout>    
+
+            <StackLayout Spacing="6" VerticalOptions="StartAndExpand">
+                <StackLayout.Padding>
+                    <OnIdiom x:TypeArguments="Thickness">
+                        <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                    </OnIdiom>
+                </StackLayout.Padding>
+
+
+                <Label x:Name="Lbl_Username" Text="Логин" />
+                <Entry x:Name="Entry_Username" Placeholder="Ваш логин..." />
+
+                <Label x:Name="Lbl_Password" Text="Пароль" />
+                <Entry x:Name="Entry_Password" Placeholder="Ваш пароль..." IsPassword="true"/>
+
+                <Label x:Name="Lbl_RepeatPassword" Text="Повторение пароля" />
+                <Entry x:Name="Entry_RepeatPassword" Placeholder="Повторите Ваш пароль..." IsPassword="true"/>
+
+                <Button x:Name="Btn_Register" Text="Зарегистрироваться" Clicked="RegisterUser"/>
+
+                <StackLayout Padding="0,20,0,5">
+                    <Button Text="?" BorderWidth="2" BorderColor="Black" BackgroundColor="White"
+                        Font="20" TextColor="Black" Clicked="GoToTroublePage"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
