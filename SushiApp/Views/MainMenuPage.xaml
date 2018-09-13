@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SushiApp.Views.MainMenuPage"
+             Title="Меню">
+    <ScrollView>
+        
+        <StackLayout Margin="20,20,20,20">
+
+            <Button Clicked="ShoppingCartBrowse"
+                Text="Корзина покупок" BackgroundColor="White"
+                    TextColor="Black" BorderRadius="15"
+                    HorizontalOptions="Fill" Margin="20,20,20,20">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="MainMenuIcons/ShoppingCartIcon.png" />
+                </Button.Image>
+            </Button>
+
+            <Button Clicked="RollsBrowse"
+                Text="Роллы" BackgroundColor="White" 
+                    TextColor="Black" BorderRadius="20"
+                    HorizontalOptions="Fill" Margin="20,0,20,20">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="MainMenuIcons/RollsIcon.png" />
+                </Button.Image>
+            </Button>
+
+            <Button Clicked="HotRollsBrowse"
+                Text="Теплые роллы" BackgroundColor="White" 
+                    TextColor="Black" BorderRadius="20"
+                    HorizontalOptions="Fill" Margin="20,0,20,20">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="MainMenuIcons/HotRollsIcon.png" />
+                </Button.Image>
+            </Button>
+
+            <Button Clicked="SushiBrowse"
+                Text="Суши" BackgroundColor="White" 
+                    TextColor="Black" BorderRadius="20"
+                    HorizontalOptions="Fill" Margin="20,0,20,20">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="MainMenuIcons/SushiIcon.png" />
+                </Button.Image>
+            </Button>
+
+            <Button Clicked="FireBrowse"
+                Text="Горячее" BackgroundColor="White" 
+                    TextColor="Black" BorderRadius="20"
+                    HorizontalOptions="Fill" Margin="20,0,20,20">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="MainMenuIcons/fire.png" />
+                </Button.Image>
+            </Button>
+
+            <Button Clicked="SetsBrowse"
+                Text="Сеты" BackgroundColor="White" 
+                    TextColor="Black" BorderRadius="20"
+                    HorizontalOptions="Fill" Margin="20,0,20,20">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="MainMenuIcons/SetsIcon.png" />
+                </Button.Image>
+            </Button>
+
+            <Button Clicked="SoucesBrowse"
+                Text="Соусы" BackgroundColor="White" 
+                    TextColor="Black" BorderRadius="20"
+                    HorizontalOptions="Fill" Margin="20,0,20,20" >
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="MainMenuIcons/SoucesIcon.png" />
+                </Button.Image>
+            </Button>
+
+            <Button Clicked="DrinksBrowse"
+                Text="Напитки" BackgroundColor="White" 
+                    TextColor="Black" BorderRadius="20"
+                    HorizontalOptions="Fill" Margin="20,0,20,20">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="MainMenuIcons/DrinksIcon.png" />
+                </Button.Image>
+            </Button>
+
+            <Button Clicked="DeliveryBrowse"
+                Text="Условия доставки" BackgroundColor="White" 
+                    TextColor="Black" BorderRadius="20"
+                    HorizontalOptions="Fill" Margin="20,0,20,20">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="MainMenuIcons/DeliveryIcon.png" />
+                </Button.Image>
+            </Button>
+
+            <StackLayout Padding="75,20,75,5">
+                    <Button Text="?" BorderWidth="2" BorderColor="Black" BackgroundColor="White"
+                        Font="20" TextColor="Black" Clicked="GoToTroublePage" WidthRequest="20"/>
+                </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Button x:Name="ButtonDeleteVersionDB" IsVisible="false" BorderWidth="2" BorderColor="White" TextColor="White" Clicked="ClearVersionDatabase" Text="Удалить базу версий" />
+                <Button x:Name="ButtonDeleteItemDB"    IsVisible="false" BorderWidth="2" BorderColor="White" TextColor="White" Clicked="ClearItemDatabase" Text="Удалить базу продуктов" />
+            </StackLayout>
+            
+        </StackLayout>
+    </ScrollView>
+        
+</ContentPage>

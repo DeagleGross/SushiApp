@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="SushiApp.Views.LoginPage"
+             Title="Добро пожаловать!">
+    <ScrollView>
+        <StackLayout x:Name="MasterLayout">
+            <StackLayout x:Name="LogoStack" VerticalOptions="FillAndExpand">
+                <Image x:Name="LoginIcon" Source="LoginIconSushi.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+                
+            <StackLayout x:Name="LogoEntriesStack" Spacing="6" VerticalOptions="StartAndExpand">
+                <StackLayout.Padding>
+                    <OnIdiom x:TypeArguments="Thickness">
+                        <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                    </OnIdiom>
+                </StackLayout.Padding>
+                
+                <Label x:Name="Lbl_Username" Text="Логин:" />
+                <Entry x:Name="Entry_Username" Placeholder="Ваш логин..." />
+
+                <Label x:Name="Lbl_Password" Text="Пароль" />
+                <Entry x:Name="Entry_Password" Placeholder="Ваш пароль..." IsPassword="true"/>
+
+                <Button x:Name="Btn_Signin" Text="Войти" Clicked="SignInProcedure"/>
+                <Button x:Name="Btn_Register" HeightRequest="7" Text="Зарегистрироваться" Clicked="GoToRegistrationPage"/>
+
+                <StackLayout Padding="75,20,75,5">
+                    <Button Text="?" BorderWidth="2" BorderColor="Black" BackgroundColor="White"
+                        Font="20" TextColor="Black" Clicked="GoToTroublePage" WidthRequest="20"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

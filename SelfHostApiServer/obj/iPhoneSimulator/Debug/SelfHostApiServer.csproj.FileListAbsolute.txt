@@ -1,0 +1,25 @@
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/SelfHostApiServer.exe
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/SelfHostApiServer.pdb
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/Microsoft.Owin.Diagnostics.dll
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/Microsoft.Owin.dll
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/Microsoft.Owin.Host.HttpListener.dll
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/Microsoft.Owin.Hosting.dll
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/Newtonsoft.Json.dll
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/Owin.dll
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/System.Net.Http.Formatting.dll
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/System.Web.Http.dll
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/System.Web.Http.Owin.dll
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/Newtonsoft.Json.xml
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/System.Net.Http.Formatting.xml
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/System.Web.Http.xml
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/System.Web.Http.Owin.xml
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/Microsoft.Owin.Host.HttpListener.xml
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/Microsoft.Owin.xml
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/Microsoft.Owin.Diagnostics.xml
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/Microsoft.Owin.Hosting.xml
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/obj/iPhoneSimulator/Debug/SelfHostApiServer.csprojResolveAssemblyReference.cache
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/obj/iPhoneSimulator/Debug/SelfHostApiServer.csproj.CoreCompileInputs.cache
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/obj/iPhoneSimulator/Debug/SelfHostApiServer.exe
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/obj/iPhoneSimulator/Debug/SelfHostApiServer.pdb
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/System.Data.SqlClient.dll
+/Users/dgmachack/Projects/CourseProject/SelfHostApiServer/bin/Debug/PhotoDatabase/Rolls/Мидори ролл.png
