@@ -1,5 +1,5 @@
 # SushiApp
-A repository for showing a small trying-to-learn-technologies project (HSE university, 1st year)
+Showing a small trying-to-learn-technologies project (HSE university, 1st year)
 
 Used technologies:
 - Xamarin (only IOS version has been tested)
